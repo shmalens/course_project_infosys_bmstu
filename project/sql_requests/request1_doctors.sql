@@ -1,0 +1,1 @@
+SELECT Doctor.id, Doctor.surname FROM Doctor;

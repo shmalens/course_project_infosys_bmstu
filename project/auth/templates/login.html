@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-5">
+    <div class="text-centering fs-1 mb-5">
+        <span>Для входа в учетную запись введите логин и пароль пользователя.</span>
+    </div>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-4">
+
+            </div>
+            <div class="col-4">
+                <form class="fs-4" action="/auth" method="post">
+                    <div class="mb-3">
+                        <label for="InputLogin" class="form-label">Логин</label>
+                        <input type="text" class="form-control" id="InputLogin" aria-describedby="emailHelp"
+                               name="login"
+                               required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="InputPassword" name="password" required>
+                    </div>
+                    <div class="text-centering">
+                        <button type="submit" class="submit-btn w-50">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

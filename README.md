@@ -1,1 +1,2 @@
-# course_project_infosys_bmstu
+# infosys
+Course work in BMSTU. Discipline: developing information systems.

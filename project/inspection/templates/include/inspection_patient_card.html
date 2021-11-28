@@ -1,0 +1,14 @@
+<div class="card m-3 fs-4">
+    <h3 class="card-header" style="background-color: #00709E; color: white">Пациент: {{ patient[1] }} {{ patient[2] }}
+        {{ patient[3] }}</h3>
+    <div class="card-body">
+        <p class="card-text">Дата рождения: {{ patient[4] }} </p>
+        <p class="card-text">Адрес: {{ patient[5] }} </p>
+        <p class="card-text">Паспортные данные: {{ patient[6] }} </p>
+        <form action="/inspection" method="post">
+            <input type="hidden" name="patient" value="{{ patient[0] }}">
+            <input type="hidden" name="doctor" value="{{ doctor }}">
+            <button type="submit" class="submit-btn">Провести осмотр</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% extends "requests_layout.html" %}
+
+{% block result %}
+{% if patients %}
+{% for patient in patients %}
+{% include "include/request1_patient_report_card.html" %}
+{% endfor %}
+{% else %}
+<div class="p-5">
+    Пожалуйста, выберете врача, по которому необходимо сформировать отчет. Иначе, если вы уже выбрали врача, у него еще
+    нет пациентов.
+</div>
+{% endif %}
+{% endblock %}
+
+{% block filter %}
+<form class="p-4" action="request1" method="post">
+    <select name="doctor" class="fs-4 form-select mt-2 mb-2">
+        {% for doctor in doctors %}
+        <option class="fs-4" value="{{doctor[0]}}">{{ doctor[1] }}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="submit-btn">Сформировать отчет</button>
+</form>
+{% endblock %}

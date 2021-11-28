@@ -1,0 +1,16 @@
+{% extends "requests_layout.html" %}
+
+{% block result %}
+{% for doctor in doctors %}
+    {% include "include/request4_doctor_card.html" %}
+{% endfor %}
+{% endblock %}
+
+{% block filter %}
+<form class="p-5 m-1" action="request4" method="post">
+    <div class="mb-4">
+        <input type="date" name="date" value=2021-12-28">
+    </div>
+    <button type="submit" class="submit-btn">Применить фильтр</button>
+</form>
+{% endblock %}

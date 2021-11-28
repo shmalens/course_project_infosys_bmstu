@@ -1,0 +1,74 @@
+.navbar-bg-color {
+    background: #00709E;
+}
+
+.content-block {
+    background: #A0E5CE;
+}
+
+.text-centering {
+    text-align: center;
+}
+
+a.link-btn, a.link-btn:active {
+    border: 1px solid #00709E;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #00709E;
+    color: white;
+}
+
+a.link-btn:hover {
+    border: 1px solid #00709E;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #00709E;
+    color: #A0E5CE;
+}
+
+button.submit-btn, a.link-btn:active {
+    border: 1px solid #00709E;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #00709E;
+    color: white;
+}
+
+a.link-btn-red, a.link-btn:active {
+    border: 1px solid #FF4040;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #FF4040;
+    color: white;
+}
+
+a.link-btn-red:hover {
+    border: 1px solid #FF4040;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #FF4040;
+    color: #A0E5CE;
+}
+
+a.link-btn-green, a.link-btn:active {
+    border: 1px solid #00AF64;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #00AF64;
+    color: white;
+}
+
+a.link-btn-green:hover {
+    border: 1px solid #00AF64;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration-line: none;
+    background-color: #00AF64;
+    color: #A0E5CE;
+}

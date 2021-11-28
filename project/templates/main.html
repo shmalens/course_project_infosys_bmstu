@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-5">
+    <div class="text-centering">
+        <h1>Добро пожаловать в инофрмационную систему "История болезни"</h1>
+        <span class="fs-4">Данная информационная система разработана в рамках курсовгого проекта по курсу "Разработка информационных
+            систем".</span>
+    </div>
+    <div class="fs-4 m-5 p-5">
+        В данный момент вашему вниманию представлена главная страница данной информационной системы. Из нее можно
+        перейти к выполнению запросов, авторизации, выполнению бизнесс-процесса.
+        <div class="mt-5 text-centering">
+            {% if session['group'] is eq('head_doctor') %}
+            <a class="link-btn m-2" href="/requests"> Справочная информация </a>
+            <a class="link-btn m-2" href="/inspection"> Провести осмотр </a>
+            {% endif %}
+
+            {% if session['group'] is eq('doctor') %}
+            <a class="link-btn m-2" href="/requests"> Справочная информация </a>
+            <a class="link-btn m-2" href="/inspection"> Провести осмотр </a>
+            {% endif %}
+
+            {% if session['group'] is eq('administrator') %}
+            <a class="link-btn m-2" href="/appointment/new_patient"> Записать нового пациента </a>
+            <a class="link-btn m-2" href="/appointment/rewrite"> Записать пациента заново </a>
+            {% endif %}
+
+            <a class="link-btn m-2" href="/exit"> Завершить работу </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

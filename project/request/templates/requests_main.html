@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="p-5">
+    <div class="text-centering">
+        <div class="fs-2"> На данной странице можно выполнить запросы к базе данных.</div>
+        <div class="fs-4">Для выбора необходимого запроса просто нажмите соответствующую этому запросу кнопку.</div>
+    </div>
+    <table cellpadding="10px" class="fs-4 m-5">
+        <tr>
+            <td>Отчет по пациентам указанного врача.</td>
+            <td>
+                <a class="link-btn m-2" href="request1">
+                    Сделать запрос 1
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Отчет по пациентам, в истории болезни которых вносил запись указанный врач</td>
+            <td>
+                <a class="link-btn m-2" href="request2">
+                Сделать запрос 2
+            </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Отчет по пациентам, с фильтром по дате рождения</td>
+            <td>
+                <a class="link-btn m-2" href="request3">
+                Сделать запрос 3
+            </a>
+            </td>
+        </tr>
+        <tr>
+            <td>Отчет по врачам, с фильтром по дате приема на работу</td>
+            <td>
+                <a class="link-btn m-2" href="request4">
+                Сделать запрос 4
+            </a>
+            </td>
+        </tr>
+    </table>
+
+<!--    <ul class="list-descriptions-stile fs-4">-->
+<!--        <li class="m-5">-->
+
+<!--            <a class="link-btn m-2" href="/requests_doctor_patients_report">-->
+<!--                Сделать запрос-->
+<!--            </a>-->
+<!--            Отчет по пациентам указанного врача.-->
+<!--        </li>-->
+
+<!--        <li class="m-5">-->
+<!--            <a class="link-btn m-2" href="/requests_doctor_notes_report">-->
+<!--                Сделать запрос-->
+<!--            </a>-->
+<!--            Отчет по пациентам, в истории болезни которых вносил запись указанный врач-->
+<!--        </li>-->
+
+<!--        <li class="m-5">-->
+<!--            <a class="link-btn m-2" href="/requests_patients">-->
+<!--                Сделать запрос-->
+<!--            </a>-->
+<!--            Отчет по пациентам, с фильтром по дате рождения-->
+<!--        </li>-->
+
+<!--        <li class="m-5">-->
+<!--            <a class="link-btn m-2" href="/requests_doctors">-->
+<!--                Сделать запрос-->
+<!--            </a>-->
+<!--            Отчет по врачам, с фильтром по дате рождения-->
+<!--        </li>-->
+<!--    </ul>-->
+</div>
+{% endblock %}

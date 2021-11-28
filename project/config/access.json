@@ -1,0 +1,21 @@
+{
+  "unauthorized": [
+  ],
+  "doctor": [
+    "requests_request1",
+    "requests_request2",
+    "requests_request3",
+    "inspect_patient"
+  ],
+  "head_doctor": [
+    "requests_request1",
+    "requests_request2",
+    "requests_request3",
+    "requests_request4",
+    "inspect_patient"
+  ],
+  "administrator": [
+    "appointment_new_patient",
+    "appointment_rewrite_patient"
+  ]
+}

@@ -1,0 +1,19 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Аннотация.}{3}%
+\contentsline {section}{\numberline {2}Задание. Описание предметной области.}{3}%
+\contentsline {section}{\numberline {3}Определение конечных пользователей.}{3}%
+\contentsline {section}{\numberline {4}Разработка UML диаграммы вариантов использования.}{4}%
+\contentsline {section}{\numberline {5}Вариант использования "Главное меню".}{4}%
+\contentsline {subsection}{\numberline {5.1}Сценарий работы главного меню.}{4}%
+\contentsline {subsection}{\numberline {5.2}BPMN диаграмма контроллера главного меню.}{5}%
+\contentsline {subsection}{\numberline {5.3}Требования к шаблонам.}{5}%
+\contentsline {subsection}{\numberline {5.4}Программная архитектура реализации главного меню.}{6}%
+\contentsline {section}{\numberline {6}Вариант использования «Работа с запросами».}{6}%
+\contentsline {subsection}{\numberline {6.1}BPMN диаграмма контроллера меню запросов.}{7}%
+\contentsline {subsection}{\numberline {6.2}Требования к шаблонам.}{7}%
+\contentsline {subsection}{\numberline {6.3}Программная архитектура реализации работы с запросами.}{8}%
+\contentsline {section}{\numberline {7}Вариант использования «Авторизация». }{9}%
+\contentsline {subsection}{\numberline {7.1}Сценарий работы «Авторизация».}{9}%
+\contentsline {subsection}{\numberline {7.2}BPMN диаграмма контроллера авторизации.}{9}%
+\contentsline {subsection}{\numberline {7.3}Требования к шаблонам.}{9}%
+\contentsline {subsection}{\numberline {7.4}Программная архитектура реализации авторизации.}{10}%
