@@ -1,24 +1,31 @@
 {% extends "requests_layout.html" %}
 
+{% block header %}
+    <div class="text-centering fs-4 p-5" style="border-bottom: solid 5px white">
+        Отчет по пациентам, в истории болезни которых вносил запись указанный врач
+    </div>
+{% endblock %}
+
 {% block result %}
-{% if histories %}
-    {% for history in histories %}
-    {% include "include/request2_history_report_card.html" %}
-    {% endfor %}
-{% else %}
-<div class="p-5">
-    Пожалуйста, выберете врача, по которому необходимо сформировать отчет. Иначе, если вы уже выбрали врача - он еще не вносил записи в истории пациентов.
-</div>
-{% endif %}
+    {% if histories %}
+        {% for history in histories %}
+            {% include "include/request2_history_report_card.html" %}
+        {% endfor %}
+    {% else %}
+        <div class="p-5">
+            Пожалуйста, выберете врача, по которому необходимо сформировать отчет. Иначе, если вы уже выбрали врача - он
+            еще не вносил записи в истории пациентов.
+        </div>
+    {% endif %}
 {% endblock %}
 
 {% block filter %}
-<form class="p-4" action="request2" method="post">
-    <select name="doctor" class="fs-4 form-select mt-2 mb-2">
-        {% for doctor in doctors %}
-        <option class="fs-4" value="{{doctor[0]}}">{{ doctor[1] }}</option>
-        {% endfor %}
-    </select>
-    <button type="submit" class="submit-btn">Сформировать отчет</button>
-</form>
+    <form class="p-4" action="request2" method="post">
+        <select name="doctor" class="fs-4 form-select mt-2 mb-2">
+            {% for doctor in doctors %}
+                <option class="fs-4" value="{{ doctor[0] }}">{{ doctor[1] }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="submit-btn">Сформировать отчет</button>
+    </form>
 {% endblock %}

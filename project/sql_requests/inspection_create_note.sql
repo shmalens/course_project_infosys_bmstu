@@ -1,2 +1,2 @@
-insert into Note (date, doctor, history)
-values (CURDATE(), '$doctor', '$history');
+insert into Note (date, note, doctor, history)
+values (CURDATE(), '$note', '$doctor', '$history');

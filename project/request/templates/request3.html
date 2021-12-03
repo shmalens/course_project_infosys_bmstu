@@ -1,16 +1,22 @@
 {% extends "requests_layout.html" %}
 
+{% block header %}
+    <div class="text-centering fs-4 p-5" style="border-bottom: solid 5px white">
+        Отчет по пациентам, с фильтром по дате рождения
+    </div>
+{% endblock %}
+
 {% block result %}
-{% for patient in patients %}
-{% include "include/request3_patient_card.html" %}
-{% endfor %}
+    {% for patient in patients %}
+        {% include "include/request3_patient_card.html" %}
+    {% endfor %}
 {% endblock %}
 
 {% block filter %}
-<form class="p-5 m-1" action="request3" method="post">
-    <div class="mb-4">
-        <input type="date" name="date" value=2021-12-28">
-    </div>
-    <button type="submit" class="submit-btn">Применить фильтр</button>
-</form>
+    <form class="p-5 m-1" action="request3" method="post">
+        <div class="mb-4">
+            <input type="date" name="date" value=2021-12-28">
+        </div>
+        <button type="submit" class="submit-btn">Применить фильтр</button>
+    </form>
 {% endblock %}

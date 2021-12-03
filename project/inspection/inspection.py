@@ -1,4 +1,4 @@
-from flask import Blueprint, request, redirect, render_template, session
+from flask import Blueprint, request, redirect, render_template, session, url_for
 
 from launch import sql_provider, DB_CONFIG
 from db_access.db_access import querying_data, inserting_data
@@ -7,7 +7,7 @@ from auth.access import group_permission
 inspection = Blueprint('inspection', __name__, template_folder='templates')
 
 
-@inspection.route('/', methods=['GET', 'POST'])
+@inspection.route('/', methods=['GET'])
 @group_permission
 def inspect_patient():
     if request.method == 'GET':
@@ -30,14 +30,63 @@ def inspect_patient():
             doctor=doctor
         )
     else:
-        doctor = request.form.get('doctor')
-        patient = request.form.get('patient')
-        history = querying_data(
-            sql_provider.get_request('inspection_get_history_id.sql', patient=patient),
+        return redirect('/inspection/spec_patient')
+
+
+@inspection.route('/spec_patient', methods=['GET', 'POST'])
+@group_permission
+def inspect_spec_patient():
+    if request.method == 'GET':
+        patient = request.args.get('patient')
+        doctor = request.args.get('doctor')
+
+        patient_data = querying_data(
+            sql_provider.get_request('inspection_get_patient.sql', patient=patient),
             DB_CONFIG
-        )[0][0]
-        inserting_data(
-            sql_provider.get_request('inspection_create_note.sql', doctor=doctor, history=history),
+        )[0]
+
+        doctor_data = querying_data(
+            sql_provider.get_request('inspection_get_doctor.sql', doctor=patient_data[-1]),
+            DB_CONFIG
+        )[0]
+
+        history = querying_data(
+            sql_provider.get_request('inspection_get_history.sql', patient=patient),
+            DB_CONFIG
+        )[0]
+
+        notes = querying_data(
+            sql_provider.get_request('inspection_get_notes.sql', history=history[0]),
             DB_CONFIG
         )
-        return redirect('/inspection')
+
+        return render_template("inspect_spec_patient.html",
+                               patient_data=patient_data,
+                               doctor_data=doctor_data,
+                               history=history,
+                               notes=notes,
+                               doctor=doctor)
+    else:
+        request_type = request.form.get('request_type')
+        patient = request.form.get('patient')
+        doctor = request.form.get('doctor')
+        history = request.form.get('history')
+
+        if request_type == 'new_note':
+            note = request.form.get('note')
+            inserting_data(sql_provider.get_request('inspection_create_note.sql',
+                                                    note=note,
+                                                    doctor=doctor,
+                                                    history=history),
+                           DB_CONFIG)
+            return redirect(url_for('inspection.inspect_spec_patient', patient=patient, doctor=doctor))
+
+        if request_type == 'discharge':
+            diagnose = request.form.get('diagnose')
+            inserting_data(sql_provider.get_request('inspection_discharge_patient.sql',
+                                                    diagnose=diagnose,
+                                                    history=history),
+                           DB_CONFIG)
+            return redirect(url_for('inspection.inspect_patient'))
+
+

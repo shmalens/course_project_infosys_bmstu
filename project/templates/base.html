@@ -17,17 +17,45 @@
             <a class="navbar-brand" href="/">История болезни</a>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/requests">Запросы</a>
-                    </li>
+                    {% if session['group'] is eq('head_doctor') %}
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/requests">Перейти к справочной
+                                информации</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/inspection">Перейти к проведению
+                                осмотра</a>
+                        </li>
+                    {% endif %}
+
+                    {% if session['group'] is eq('doctor') %}
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/requests">Перейти к справочной
+                                информации</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/inspection">Перейти к проведению
+                                осмотра</a>
+                        </li>
+                    {% endif %}
+
+                    {% if session['group'] is eq('administrator') %}
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/appointment/new_patient">Записать нового пациента</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/appointment/rewrite">Записать пациента заново</a>
+
+                        </li>
+                    {% endif %}
                 </ul>
                 <div class="d-flex">
                     {% if session['group'] %}
-                    <a class="link-btn-red m-2" href="/auth/exit"> Выйти из учетной записи </a>
-                    {% elif session['group'] is eq('unauthorized')%}
-                    <a class="link-btn-green m-2" href="/auth"> Войти в учетную запись </a>
+                        <a class="link-btn-red m-2" href="/auth/exit"> Выйти из учетной записи </a>
+                    {% elif session['group'] is eq('unauthorized') %}
+                        <a class="link-btn-green m-2" href="/auth"> Войти в учетную запись </a>
                     {% else %}
-                    <a class="link-btn-green m-2" href="/auth"> Войти в учетную запись </a>
+                        <a class="link-btn-green m-2" href="/auth"> Войти в учетную запись </a>
                     {% endif %}
                 </div>
             </div>

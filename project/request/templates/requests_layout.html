@@ -2,17 +2,19 @@
 
 {% block content %}
 
-<div class="container-fluid">
-  <div class="row fs-4">
-    <div class="col-8">
-      {% block result %}
-      {% endblock %}
+    <div class="container-fluid">
+        {% block header %}
+        {% endblock %}
+        <div class="row fs-4">
+            <div class="col-8">
+                {% block result %}
+                {% endblock %}
+            </div>
+            <div class="col-4" style="border-left: solid 5px white">
+                {% block filter %}
+                {% endblock %}
+            </div>
+        </div>
     </div>
-    <div class="col-4" style="border-left: solid 5px white">
-      {% block filter %}
-      {% endblock %}
-    </div>
-  </div>
-</div>
 
-{%endblock%}
+{% endblock %}

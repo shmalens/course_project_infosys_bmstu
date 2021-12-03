@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="p-5">
+        <div class="fs-2 text-centering mb-5">
+            Осмотр пациента: {{ patient_data[1] }} {{ patient_data[2] }} {{ patient_data[3] }}
+        </div>
+
+        <div class="container-fluid pb-5" style="border-bottom: 5px solid white">
+            <div class="row">
+                <div class="col-2">
+                </div>
+                <div class="col-8">
+                    {#                    НЕОБХОДИМО ВЫНЕСТИ В ОТДЕЛЬНЫЕ КАРТОЧКИ#}
+                    {% include "include/inspection_patient_spec_card.html" %}
+                    {% include "include/inspection_history_spec_card.html" %}
+
+                </div>
+                <div class="col-2">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-7 p-5" style="border-right: 5px solid white">
+                    <div class="fs-2">
+                        Записи в истории болезни
+                    </div>
+                    <div>
+                        {% if notes %}
+                            {% for note in notes %}
+                                {% include "include/inspection_note_spec_card.html" %}
+                            {% endfor %}
+                        {% else %}
+                            <span class="fs-4"
+                                  style="color: white"> В данный момент еще нет записей в истории болезни </span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="col-5 p-5">
+                    <div class="pb-3" style="border-bottom: 2px solid #00709E">
+                        <span class="fs-2"> Проведение осмотра </span>
+                        <form class="fs-4" action="/inspection/spec_patient" method="post">
+                            <input type="hidden" name="request_type" value="new_note">
+                            <input type="hidden" name="patient" value="{{ patient_data[0] }}">
+                            <input type="hidden" name="doctor" value="{{ doctor }}">
+                            <input type="hidden" name="history" value="{{ history[0] }}">
+                            <div class="mb-3">
+                                <label for="Note" class="form-label">Результаты осмотра</label>
+                                <input type="text" class="form-control" id="Note" name="note" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Провести осмотр</button>
+                        </form>
+                    </div>
+                    <div class="mt-3">
+                        <span class="fs-2"> Выписка пациента </span>
+                        <form class="fs-4" action="/inspection/spec_patient" method="post">
+                            <input type="hidden" name="request_type" value="discharge">
+                            <input type="hidden" name="patient" value="{{ patient_data[0] }}">
+                            <input type="hidden" name="doctor" value="{{ doctor }}">
+                            <input type="hidden" name="history" value="{{ history[0] }}">
+                            <div class="mb-3">
+                                <label for="Diagnose" class="form-label">Диагноз при выписке</label>
+                                <input type="text" class="form-control" id="Diagnose" name="diagnose" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Выписать пациента</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
