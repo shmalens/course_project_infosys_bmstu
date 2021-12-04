@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="MySQL - @localhost">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.23">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.31">
     <root id="1">
-      <ServerVersion>8.0.27</ServerVersion>
+      <DefaultCasing>exact</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
       <DefaultTmpEngine>InnoDB</DefaultTmpEngine>
-      <DefaultCasing>exact</DefaultCasing>
+      <ServerVersion>8.0.27</ServerVersion>
     </root>
     <schema id="2" parent="1" name="information_schema">
-      <Current>1</Current>
       <Collation>utf8_general_ci</Collation>
+      <Current>1</Current>
     </schema>
     <schema id="3" parent="1" name="mysql">
       <Collation>utf8mb4_0900_ai_ci</Collation>

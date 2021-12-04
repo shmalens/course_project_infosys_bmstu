@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="fs-1 text-centering">
-    Пожалуйста заполните данные о пациенте и выберете врача из списка, чтобы записать его на лечение в стационаре.
+<div class="fs-1 text-centering p-5">
+    Пожалуйста проверьте паспортные данные пациента и выберете для него врача.
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -10,35 +10,20 @@
         </div>
         <div class="col-8">
             <form class="fs-4 p-5 w-75" action="/appointment/new_patient" method="post">
+
                 <div class="mb-3">
-                    <label for="InputFirstName" class="form-label">Имя</label>
-                    <input type="text" class="form-control" id="InputFirstName" name="first_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputSecondName" class="form-label">Отчество</label>
-                    <input type="text" class="form-control" id="InputSecondName" name="second_name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputSurname" class="form-label">Фамилия</label>
-                    <input type="text" class="form-control" id="InputSurname" name="surname" required>
-                </div>
-                <div class="mb-4">
-                    <label for="InputBirthday" class="form-label">Дата рождения</label>
-                    <input class="ms-3" type="date" name="birthday" value="2021-12-28" id="InputBirthday" required>
-                </div>
-                <div class="mb-4">
-                    <label for="InputAddress" class="form-label">Адрес</label>
-                    <input type="text" class="form-control" id="InputAddress" name="address" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputPassport" class="form-label">Паспортные данные</label>
-                    <input type="text" class="form-control" id="InputPassport" name="passport" required>
-                </div>
-                <div class="mb-3">
-                    <label for="InputDiagnose" class="form-label">Жалобы</label>
-                    <input type="text" class="form-control" id="InputDiagnose" name="diagnose" required>
-                </div>
-                <div class="mb-3">
+                    <label for="InputPatient" class="form-label">Выбрать пациента</label>
+                    <select id="InputPatient" name="patient" class="fs-4 form-select mt-2 mb-2" required>
+                        {% for patient in patients %}
+                        <option class="fs-4" value="{{ patient[0] }}">Фамилия: {{ patient[1] }}, паспорт: {{ patient[2] }}</option>
+                        {% endfor %}
+                    </select>
+                    <label for="InputRoom" class="form-label">Выбрать палату</label>
+                    <select id="InputRoom" name="room" class="fs-4 form-select mt-2 mb-2" required>
+                        {% for room in rooms %}
+                        <option class="fs-4" value="{{ room[0] }}">Комната: {{ room[1] }}, сейчас пациентов {{ room[2] }}</option>
+                        {% endfor %}
+                    </select>
                     <label for="InputDoctor" class="form-label">Привязать врача</label>
                     <select id="InputDoctor" name="doctor" class="fs-4 form-select mt-2 mb-2" required>
                         {% for doctor in doctors %}

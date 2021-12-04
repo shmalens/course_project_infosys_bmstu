@@ -1,0 +1,78 @@
+insert into disease_history.Referral (first_name,
+                                      second_name,
+                                      surname,
+                                      birthday,
+                                      address,
+                                      passport,
+                                      diagnose)
+values ('Александр',
+        'Иванович',
+        'Дунайцев',
+        '1999-10-16',
+        'Москва Измайловский проспект 73а',
+        '4516 495542',
+        'Простуда');
+
+
+insert into disease_history.Referral (first_name,
+                                      second_name,
+                                      surname,
+                                      birthday,
+                                      address,
+                                      passport,
+                                      diagnose)
+values ('Лавр',
+        'Олегович',
+        'Орешни',
+        '2000-01-20',
+        'Какой-то важные адрес юхуу',
+        '4516 263423',
+        'Скитлстрянка');
+
+
+insert into disease_history.Referral (first_name,
+                                      second_name,
+                                      surname,
+                                      birthday,
+                                      address,
+                                      passport,
+                                      diagnose)
+values ('Ян',
+        'Казимирович',
+        'Лапоть',
+        '2010-11-22',
+        'Санкт-Петербург, улица 12 стульев, 20',
+        '1234 263423',
+        'Укус ежа, осложенение, ЧЕШЕТСЯ');
+
+
+insert into disease_history.Referral (first_name,
+                                      second_name,
+                                      surname,
+                                      birthday,
+                                      address,
+                                      passport,
+                                      diagnose)
+values ('Сверипей',
+        'Наукович',
+        'Техничий',
+        '2012-09-12',
+        'Нижние-Вилочки, улица Ленина, 20',
+        '2352 263423',
+        'Перелом руки');
+
+
+insert into disease_history.Referral (first_name,
+                                      second_name,
+                                      surname,
+                                      birthday,
+                                      address,
+                                      passport,
+                                      diagnose)
+values ('Ренат',
+        'Сергеевич',
+        'Иванов',
+        '1984-05-13',
+        'Москва, улица Ивана Бабушкина, 10',
+        '6541 123423',
+        'COVID-19');

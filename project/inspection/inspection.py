@@ -60,12 +60,18 @@ def inspect_spec_patient():
             DB_CONFIG
         )
 
+        room = querying_data(
+            sql_provider.get_request('inspection_get_room.sql', room_id=patient_data[8]),
+            DB_CONFIG
+        )[0]
+
         return render_template("inspect_spec_patient.html",
                                patient_data=patient_data,
                                doctor_data=doctor_data,
                                history=history,
                                notes=notes,
-                               doctor=doctor)
+                               doctor=doctor,
+                               room=room)
     else:
         request_type = request.form.get('request_type')
         patient = request.form.get('patient')
@@ -83,10 +89,13 @@ def inspect_spec_patient():
 
         if request_type == 'discharge':
             diagnose = request.form.get('diagnose')
+            room_id = request.form.get('room_id')
             inserting_data(sql_provider.get_request('inspection_discharge_patient.sql',
                                                     diagnose=diagnose,
                                                     history=history),
                            DB_CONFIG)
+            inserting_data(sql_provider.get_request('inspection_decrease_roommates.sql', room_id=room_id), DB_CONFIG)
+
             return redirect(url_for('inspection.inspect_patient'))
 
 

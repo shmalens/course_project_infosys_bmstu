@@ -1,2 +1,16 @@
-insert into Patient (first_name, second_name, surname, birthday, address, passport, doctor)
-values ('$first_name', '$second_name', '$surname', '$birthday', '$address', '$passport', '$doctor');
+insert into disease_history.Patient (first_name,
+                                     second_name,
+                                     surname,
+                                     birthday,
+                                     address,
+                                     passport,
+                                     doctor,
+                                     room)
+values ('$first_name',
+        '$second_name',
+        '$surname',
+        '$birthday',
+        '$address',
+        '$passport',
+        '$doctor',
+        '$room');
