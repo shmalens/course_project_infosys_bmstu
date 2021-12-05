@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.11)  5 DEC 2021 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.11)  5 DEC 2021 22:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -562,22 +562,23 @@ File: pictures/Requests_Controller.png Graphic file (type png)
 Package pdftex.def Info: pictures/Requests_Controller.png  used on input line 2
 18.
 (pdftex.def)             Requested size: 386.95894pt x 191.02744pt.
-<pictures/Handler_BPMN.png, id=41, 754.82pt x 367.3725pt>
-File: pictures/Handler_BPMN.png Graphic file (type png)
-<use pictures/Handler_BPMN.png>
-Package pdftex.def Info: pictures/Handler_BPMN.png  used on input line 225.
+<pictures/requestHandlerBPMN.png, id=41, 754.82pt x 367.3725pt>
+File: pictures/requestHandlerBPMN.png Graphic file (type png)
+<use pictures/requestHandlerBPMN.png>
+Package pdftex.def Info: pictures/requestHandlerBPMN.png  used on input line 22
+5.
 (pdftex.def)             Requested size: 386.95894pt x 188.33287pt.
- [7 <./pictures/Requests_Controller.png> <./pictures/Handler_BPMN.png>]
+ [7 <./pictures/Requests_Controller.png> <./pictures/requestHandlerBPMN.png>]
 <pictures/requests_arch.png, id=48, 402.50375pt x 804.00375pt>
 File: pictures/requests_arch.png Graphic file (type png)
 <use pictures/requests_arch.png>
 Package pdftex.def Info: pictures/requests_arch.png  used on input line 250.
 (pdftex.def)             Requested size: 213.66376pt x 426.79567pt.
  [8 <./pictures/requests_arch.png>]
-<pictures/BPMN_auth.png, id=53, 754.82pt x 382.42876pt>
-File: pictures/BPMN_auth.png Graphic file (type png)
-<use pictures/BPMN_auth.png>
-Package pdftex.def Info: pictures/BPMN_auth.png  used on input line 270.
+<pictures/authBPMN.png, id=53, 754.82pt x 382.42876pt>
+File: pictures/authBPMN.png Graphic file (type png)
+<use pictures/authBPMN.png>
+Package pdftex.def Info: pictures/authBPMN.png  used on input line 270.
 (pdftex.def)             Requested size: 386.95894pt x 196.05144pt.
 
 Overfull \hbox (44.95796pt too wide) in paragraph at lines 276--278
@@ -585,7 +586,7 @@ Overfull \hbox (44.95796pt too wide) in paragraph at lines 276--278
 ии (пе-ре-ход по ад-ре-су `/login/clearsession')
  []
 
-[9 <./pictures/BPMN_auth.png>]
+[9 <./pictures/authBPMN.png>]
 <pictures/auth_arch.png, id=58, 402.50375pt x 482.80376pt>
 File: pictures/auth_arch.png Graphic file (type png)
 <use pictures/auth_arch.png>
@@ -624,7 +625,7 @@ Package pdftex.def Info: pictures/logic_model.png  used on input line 381.
  [15 <./pictures/logic_model.png (PNG copy)>] [16] (./RPZ_Dunaitsev.aux) ) 
 Here is how much of TeX's memory you used:
  5321 strings out of 481239
- 78849 string characters out of 5920376
+ 78879 string characters out of 5920376
  330996 words of memory out of 5000000
  20518 multiletter control sequences out of 15000+600000
  544187 words of font info for 47 fonts, out of 8000000 for 9000
@@ -638,7 +639,7 @@ r/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-supe
 r/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
 /share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on RPZ_Dunaitsev.pdf (16 pages, 1246069 bytes).
+Output written on RPZ_Dunaitsev.pdf (16 pages, 1240262 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  65 compressed objects within 1 object stream
