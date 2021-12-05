@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.1)  10 NOV 2021 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.11.11)  5 DEC 2021 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,77 +541,107 @@ File: pictures/UML_variants_using.png Graphic file (type png)
 <use pictures/UML_variants_using.png>
 Package pdftex.def Info: pictures/UML_variants_using.png  used on input line 15
 4.
-(pdftex.def)             Requested size: 483.69684pt x 287.515pt.
+(pdftex.def)             Requested size: 338.5863pt x 201.26105pt.
  [4 <./pictures/UML_variants_using.png>]
 <pictures/BPMN_main_menu_using.png, id=30, 713.66624pt x 352.31625pt>
 File: pictures/BPMN_main_menu_using.png Graphic file (type png)
 <use pictures/BPMN_main_menu_using.png>
 Package pdftex.def Info: pictures/BPMN_main_menu_using.png  used on input line 
 179.
-(pdftex.def)             Requested size: 483.69684pt x 238.78699pt.
+(pdftex.def)             Requested size: 386.95894pt x 191.02744pt.
  [5 <./pictures/BPMN_main_menu_using.png>]
 <pictures/main_menu_arch.png, id=35, 402.50375pt x 995.72pt>
 File: pictures/main_menu_arch.png Graphic file (type png)
 <use pictures/main_menu_arch.png>
 Package pdftex.def Info: pictures/main_menu_arch.png  used on input line 198.
-(pdftex.def)             Requested size: 195.5273pt x 483.69684pt.
+(pdftex.def)             Requested size: 201.28209pt x 497.92105pt.
  [6 <./pictures/main_menu_arch.png>]
 <pictures/Requests_Controller.png, id=40, 713.66624pt x 352.31625pt>
 File: pictures/Requests_Controller.png Graphic file (type png)
 <use pictures/Requests_Controller.png>
 Package pdftex.def Info: pictures/Requests_Controller.png  used on input line 2
-17.
-(pdftex.def)             Requested size: 435.32419pt x 214.90721pt.
+18.
+(pdftex.def)             Requested size: 386.95894pt x 191.02744pt.
 <pictures/Handler_BPMN.png, id=41, 754.82pt x 367.3725pt>
 File: pictures/Handler_BPMN.png Graphic file (type png)
 <use pictures/Handler_BPMN.png>
-Package pdftex.def Info: pictures/Handler_BPMN.png  used on input line 224.
-(pdftex.def)             Requested size: 435.32419pt x 211.87097pt.
+Package pdftex.def Info: pictures/Handler_BPMN.png  used on input line 225.
+(pdftex.def)             Requested size: 386.95894pt x 188.33287pt.
  [7 <./pictures/Requests_Controller.png> <./pictures/Handler_BPMN.png>]
 <pictures/requests_arch.png, id=48, 402.50375pt x 804.00375pt>
 File: pictures/requests_arch.png Graphic file (type png)
 <use pictures/requests_arch.png>
-Package pdftex.def Info: pictures/requests_arch.png  used on input line 249.
-(pdftex.def)             Requested size: 217.93225pt x 435.32419pt.
+Package pdftex.def Info: pictures/requests_arch.png  used on input line 250.
+(pdftex.def)             Requested size: 213.66376pt x 426.79567pt.
  [8 <./pictures/requests_arch.png>]
 <pictures/BPMN_auth.png, id=53, 754.82pt x 382.42876pt>
 File: pictures/BPMN_auth.png Graphic file (type png)
 <use pictures/BPMN_auth.png>
-Package pdftex.def Info: pictures/BPMN_auth.png  used on input line 268.
-(pdftex.def)             Requested size: 483.69684pt x 245.06284pt.
+Package pdftex.def Info: pictures/BPMN_auth.png  used on input line 270.
+(pdftex.def)             Requested size: 386.95894pt x 196.05144pt.
 
-Overfull \hbox (44.95796pt too wide) in paragraph at lines 274--276
+Overfull \hbox (44.95796pt too wide) in paragraph at lines 276--278
 \T2A/cmr/m/n/12 об-ра-бот-чи-ку вве-дјн-ных дан-ных, кноп-ку для очист-ки сес-с
 ии (пе-ре-ход по ад-ре-су `/login/clearsession')
  []
 
-<pictures/auth_arch.png, id=54, 402.50375pt x 482.80376pt>
+[9 <./pictures/BPMN_auth.png>]
+<pictures/auth_arch.png, id=58, 402.50375pt x 482.80376pt>
 File: pictures/auth_arch.png Graphic file (type png)
 <use pictures/auth_arch.png>
-Package pdftex.def Info: pictures/auth_arch.png  used on input line 291.
-(pdftex.def)             Requested size: 338.5863pt x 406.13438pt.
-[9 <./pictures/BPMN_auth.png>] [10 <./pictures/auth_arch.png>]
-(./RPZ_Dunaitsev.aux) ) 
+Package pdftex.def Info: pictures/auth_arch.png  used on input line 294.
+(pdftex.def)             Requested size: 237.21106pt x 284.52321pt.
+<pictures/referralGospitalize.png, id=59, 774.895pt x 405.515pt>
+File: pictures/referralGospitalize.png Graphic file (type png)
+<use pictures/referralGospitalize.png>
+Package pdftex.def Info: pictures/referralGospitalize.png  used on input line 3
+16.
+(pdftex.def)             Requested size: 386.95894pt x 202.5033pt.
+ [10 <./pictures/auth_arch.png>] [11 <./pictures/referralGospitalize.png>]
+<pictures/archReferral.png, id=68, 402.50375pt x 683.55376pt>
+File: pictures/archReferral.png Graphic file (type png)
+<use pictures/archReferral.png>
+Package pdftex.def Info: pictures/archReferral.png  used on input line 331.
+(pdftex.def)             Requested size: 209.43213pt x 355.65944pt.
+ [12 <./pictures/archReferral.png>]
+<pictures/treatment.png, id=73, 1429.34pt x 467.7475pt>
+File: pictures/treatment.png Graphic file (type png)
+<use pictures/treatment.png>
+Package pdftex.def Info: pictures/treatment.png  used on input line 353.
+(pdftex.def)             Requested size: 483.69684pt x 158.28976pt.
+ [13 <./pictures/treatment.png>]
+<pictures/archTreatment.png, id=79, 492.84125pt x 884.30376pt>
+File: pictures/archTreatment.png Graphic file (type png)
+<use pictures/archTreatment.png>
+Package pdftex.def Info: pictures/archTreatment.png  used on input line 372.
+(pdftex.def)             Requested size: 277.50827pt x 497.92105pt.
+ [14 <./pictures/archTreatment.png>]
+<pictures/logic_model.png, id=84, 2421.045pt x 2047.65pt>
+File: pictures/logic_model.png Graphic file (type png)
+<use pictures/logic_model.png>
+Package pdftex.def Info: pictures/logic_model.png  used on input line 381.
+(pdftex.def)             Requested size: 483.69684pt x 409.08533pt.
+ [15 <./pictures/logic_model.png (PNG copy)>] [16] (./RPZ_Dunaitsev.aux) ) 
 Here is how much of TeX's memory you used:
- 5284 strings out of 481239
- 77939 string characters out of 5920377
- 328796 words of memory out of 5000000
- 20486 multiletter control sequences out of 15000+600000
+ 5321 strings out of 481239
+ 78849 string characters out of 5920376
+ 330996 words of memory out of 5000000
+ 20518 multiletter control sequences out of 15000+600000
  544187 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,14n,45p,847b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.
-enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/tex
-mf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/publi
-c/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.p
-fb>
-Output written on RPZ_Dunaitsev.pdf (10 pages, 888682 bytes).
+ 41i,14n,45p,1318b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr
+/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}{/usr/share/texmf/fonts/
+enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on RPZ_Dunaitsev.pdf (16 pages, 1246069 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 118 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

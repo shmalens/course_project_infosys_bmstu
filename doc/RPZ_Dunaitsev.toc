@@ -9,11 +9,23 @@
 \contentsline {subsection}{\numberline {5.3}Требования к шаблонам.}{5}%
 \contentsline {subsection}{\numberline {5.4}Программная архитектура реализации главного меню.}{6}%
 \contentsline {section}{\numberline {6}Вариант использования «Работа с запросами».}{6}%
-\contentsline {subsection}{\numberline {6.1}BPMN диаграмма контроллера меню запросов.}{7}%
-\contentsline {subsection}{\numberline {6.2}Требования к шаблонам.}{7}%
-\contentsline {subsection}{\numberline {6.3}Программная архитектура реализации работы с запросами.}{8}%
+\contentsline {subsection}{\numberline {6.1}Сценарий использования "Работа с запросами".}{6}%
+\contentsline {subsection}{\numberline {6.2}BPMN диаграмма контроллера меню запросов.}{7}%
+\contentsline {subsection}{\numberline {6.3}Требования к шаблонам.}{7}%
+\contentsline {subsection}{\numberline {6.4}Программная архитектура реализации работы с запросами.}{8}%
 \contentsline {section}{\numberline {7}Вариант использования «Авторизация». }{9}%
 \contentsline {subsection}{\numberline {7.1}Сценарий работы «Авторизация».}{9}%
 \contentsline {subsection}{\numberline {7.2}BPMN диаграмма контроллера авторизации.}{9}%
 \contentsline {subsection}{\numberline {7.3}Требования к шаблонам.}{9}%
 \contentsline {subsection}{\numberline {7.4}Программная архитектура реализации авторизации.}{10}%
+\contentsline {section}{\numberline {8}Вариант использования "Запись пациентов на госпитализацию".}{10}%
+\contentsline {subsection}{\numberline {8.1}Сценарий использования "Запись пациентов на госпитализацию".}{10}%
+\contentsline {subsection}{\numberline {8.2}BPMN диаграмма контроллера записи пациентов.}{11}%
+\contentsline {subsection}{\numberline {8.3}Требования к шаблонам.}{11}%
+\contentsline {subsection}{\numberline {8.4}Программная аритектура реализации сценария "Запись пациента на госпитализацю".}{12}%
+\contentsline {section}{\numberline {9}Вариант использования "Лечение пациента".}{12}%
+\contentsline {subsection}{\numberline {9.1}Сценарий использования "Лечение пациента".}{12}%
+\contentsline {subsection}{\numberline {9.2}BPMN диаграмма контроллера "Лечение пациента".}{13}%
+\contentsline {subsection}{\numberline {9.3}Требования к шаблонам.}{13}%
+\contentsline {subsection}{\numberline {9.4}Программная аритектура реализации сценария "Лечение пациента".}{14}%
+\contentsline {section}{\numberline {10}Логическая модель базы данных}{15}%
